@@ -244,37 +244,37 @@ public:
     hst_csc_nu1= new TH2F(N2+"_hst_csc_nu1","station vs csc seg number w/ > 5 hits seg", 6, 0, 6, 20, -0.25, 9.75);
     hChi2_d_Dof= new TH1F(N2+"_hChi2_d_Dof"," chi2/dof ",5000,0.,50. ); 
 
-    eta_dphi01 = new TH2F(N2+"01_eta_dphi", "eta vs dphi01", 150, 1., 2.5, 2000, -0.2, 0.2);
-    eta_dphi12 = new TH2F(N2+"12_eta_dphi", "eta vs dphi12", 150, 1., 2.5, 2000, -0.2, 0.2);
-    eta_dphi13 = new TH2F(N2+"13_eta_dphi", "eta vs dphi13", 150, 1., 2.5, 2000, -0.2, 0.2);
-    eta_dphi14 = new TH2F(N2+"14_eta_dphi", "eta vs dphi14", 150, 1., 2.5, 2000, -0.2, 0.2);
-    eta_dphi23 = new TH2F(N2+"23_eta_dphi", "eta vs dphi23", 150, 1., 2.5, 2000, -0.2, 0.2);
-    eta_dphi24 = new TH2F(N2+"24_eta_dphi", "eta vs dphi24", 150, 1., 2.5, 2000, -0.2, 0.2);
-    eta_dphi34 = new TH2F(N2+"34_eta_dphi", "eta vs dphi34", 150, 1., 2.5, 2000, -0.2, 0.2);
+    eta_dphi01 = new TH2F(N2+"01_eta_dphi", "eta vs dphi01", 180, 0.9, 2.7, 2000, -0.2, 0.2);
+    eta_dphi12 = new TH2F(N2+"12_eta_dphi", "eta vs dphi12", 180, 0.9, 2.7, 2000, -0.2, 0.2);
+    eta_dphi13 = new TH2F(N2+"13_eta_dphi", "eta vs dphi13", 180, 0.9, 2.7, 2000, -0.2, 0.2);
+    eta_dphi14 = new TH2F(N2+"14_eta_dphi", "eta vs dphi14", 180, 0.9, 2.7, 2000, -0.2, 0.2);
+    eta_dphi23 = new TH2F(N2+"23_eta_dphi", "eta vs dphi23", 180, 0.9, 2.7, 2000, -0.2, 0.2);
+    eta_dphi24 = new TH2F(N2+"24_eta_dphi", "eta vs dphi24", 180, 0.9, 2.7, 2000, -0.2, 0.2);
+    eta_dphi34 = new TH2F(N2+"34_eta_dphi", "eta vs dphi34", 180, 0.9, 2.7, 2000, -0.2, 0.2);
 
-    eta_rdphi01 = new TH2F(N2+"01_eta_rdphi", "eta vs rdphi01", 150, 1., 2.5, 2000, -0.2, 0.2);
-    eta_rdphi12 = new TH2F(N2+"12_eta_rdphi", "eta vs rdphi12", 150, 1., 2.5, 2000, -0.2, 0.2);
-    eta_rdphi13 = new TH2F(N2+"13_eta_rdphi", "eta vs rdphi13", 150, 1., 2.5, 2000, -0.2, 0.2);
-    eta_rdphi14 = new TH2F(N2+"14_eta_rdphi", "eta vs rdphi14", 150, 1., 2.5, 2000, -0.2, 0.2);
-    eta_rdphi23 = new TH2F(N2+"23_eta_rdphi", "eta vs rdphi23", 150, 1., 2.5, 2000, -0.2, 0.2);
-    eta_rdphi24 = new TH2F(N2+"24_eta_rdphi", "eta vs rdphi24", 150, 1., 2.5, 2000, -0.2, 0.2);
-    eta_rdphi34 = new TH2F(N2+"34_eta_rdphi", "eta vs rdphi34", 150, 1., 2.5, 2000, -0.2, 0.2);
+    eta_rdphi01 = new TH2F(N2+"01_eta_rdphi", "eta vs rdphi01", 180, 0.9, 2.7, 2000, -0.2, 0.2);
+    eta_rdphi12 = new TH2F(N2+"12_eta_rdphi", "eta vs rdphi12", 180, 0.9, 2.7, 2000, -0.2, 0.2);
+    eta_rdphi13 = new TH2F(N2+"13_eta_rdphi", "eta vs rdphi13", 180, 0.9, 2.7, 2000, -0.2, 0.2);
+    eta_rdphi14 = new TH2F(N2+"14_eta_rdphi", "eta vs rdphi14", 180, 0.9, 2.7, 2000, -0.2, 0.2);
+    eta_rdphi23 = new TH2F(N2+"23_eta_rdphi", "eta vs rdphi23", 180, 0.9, 2.7, 2000, -0.2, 0.2);
+    eta_rdphi24 = new TH2F(N2+"24_eta_rdphi", "eta vs rdphi24", 180, 0.9, 2.7, 2000, -0.2, 0.2);
+    eta_rdphi34 = new TH2F(N2+"34_eta_rdphi", "eta vs rdphi34", 180, 0.9, 2.7, 2000, -0.2, 0.2);
 
-    eta_dphiPt01 = new TH2F(N2+"01_eta_dphiPt", "eta vs dphi*Pt01", 150, 1., 2.5, 600, -3., 3.);
-    eta_dphiPt12 = new TH2F(N2+"12_eta_dphiPt", "eta vs dphi*Pt12", 150, 1., 2.5, 600, -3., 3.);
-    eta_dphiPt13 = new TH2F(N2+"13_eta_dphiPt", "eta vs dphi*Pt13", 150, 1., 2.5, 600, -3., 3.);
-    eta_dphiPt14 = new TH2F(N2+"14_eta_dphiPt", "eta vs dphi*Pt14", 150, 1., 2.5, 600, -3., 3.);
-    eta_dphiPt23 = new TH2F(N2+"23_eta_dphiPt", "eta vs dphi*Pt23", 150, 1., 2.5, 600, -3., 3.);
-    eta_dphiPt24 = new TH2F(N2+"24_eta_dphiPt", "eta vs dphi*Pt24", 150, 1., 2.5, 600, -3., 3.);
-    eta_dphiPt34 = new TH2F(N2+"34_eta_dphiPt", "eta vs dphi*Pt34", 150, 1., 2.5, 600, -3., 3.);
+    eta_dphiPt01 = new TH2F(N2+"01_eta_dphiPt", "eta vs dphi*Pt01", 180, 0.9, 2.7, 600, -3., 3.);
+    eta_dphiPt12 = new TH2F(N2+"12_eta_dphiPt", "eta vs dphi*Pt12", 180, 0.9, 2.7, 600, -3., 3.);
+    eta_dphiPt13 = new TH2F(N2+"13_eta_dphiPt", "eta vs dphi*Pt13", 180, 0.9, 2.7, 600, -3., 3.);
+    eta_dphiPt14 = new TH2F(N2+"14_eta_dphiPt", "eta vs dphi*Pt14", 180, 0.9, 2.7, 600, -3., 3.);
+    eta_dphiPt23 = new TH2F(N2+"23_eta_dphiPt", "eta vs dphi*Pt23", 180, 0.9, 2.7, 600, -3., 3.);
+    eta_dphiPt24 = new TH2F(N2+"24_eta_dphiPt", "eta vs dphi*Pt24", 180, 0.9, 2.7, 600, -3., 3.);
+    eta_dphiPt34 = new TH2F(N2+"34_eta_dphiPt", "eta vs dphi*Pt34", 180, 0.9, 2.7, 600, -3., 3.);
 
-    eta_rdphiPt01 = new TH2F(N2+"01_eta_rdphiPt", "eta vs rdphi*Pt01", 150, 1., 2.5, 600, -3., 3.);
-    eta_rdphiPt12 = new TH2F(N2+"12_eta_rdphiPt", "eta vs rdphi*Pt12", 150, 1., 2.5, 600, -3., 3.);
-    eta_rdphiPt13 = new TH2F(N2+"13_eta_rdphiPt", "eta vs rdphi*Pt13", 150, 1., 2.5, 600, -3., 3.);
-    eta_rdphiPt14 = new TH2F(N2+"14_eta_rdphiPt", "eta vs rdphi*Pt14", 150, 1., 2.5, 600, -3., 3.);
-    eta_rdphiPt23 = new TH2F(N2+"23_eta_rdphiPt", "eta vs rdphi*Pt23", 150, 1., 2.5, 600, -3., 3.);
-    eta_rdphiPt24 = new TH2F(N2+"24_eta_rdphiPt", "eta vs rdphi*Pt24", 150, 1., 2.5, 600, -3., 3.);
-    eta_rdphiPt34 = new TH2F(N2+"34_eta_rdphiPt", "eta vs rdphi*Pt34", 150, 1., 2.5, 600, -3., 3.);
+    eta_rdphiPt01 = new TH2F(N2+"01_eta_rdphiPt", "eta vs rdphi*Pt01", 180, 0.9, 2.7, 600, -3., 3.);
+    eta_rdphiPt12 = new TH2F(N2+"12_eta_rdphiPt", "eta vs rdphi*Pt12", 180, 0.9, 2.7, 600, -3., 3.);
+    eta_rdphiPt13 = new TH2F(N2+"13_eta_rdphiPt", "eta vs rdphi*Pt13", 180, 0.9, 2.7, 600, -3., 3.);
+    eta_rdphiPt14 = new TH2F(N2+"14_eta_rdphiPt", "eta vs rdphi*Pt14", 180, 0.9, 2.7, 600, -3., 3.);
+    eta_rdphiPt23 = new TH2F(N2+"23_eta_rdphiPt", "eta vs rdphi*Pt23", 180, 0.9, 2.7, 600, -3., 3.);
+    eta_rdphiPt24 = new TH2F(N2+"24_eta_rdphiPt", "eta vs rdphi*Pt24", 180, 0.9, 2.7, 600, -3., 3.);
+    eta_rdphiPt34 = new TH2F(N2+"34_eta_rdphiPt", "eta vs rdphi*Pt34", 180, 0.9, 2.7, 600, -3., 3.);
 
   }
 
@@ -537,33 +537,33 @@ public:
     hrdphi_Pt   = new TH2F(N3+"_hrdphi_Pt", "rec dphi vs Pt", 50, 5., 205., 200, -0.06, 0.06);
     hrdeta_Pt   = new TH2F(N3+"_hrdeta_Pt", "rec deta vs Pt", 50, 5., 205., 202, -0.01, 0.01);
 
-    hbeta_dphi12 = new TH2F(N3+"12_eta_dphi", "eta vs dphi12", 110, 0., 1.1, 2000, -0.1, 0.1);
-    hbeta_dphi13 = new TH2F(N3+"13_eta_dphi", "eta vs dphi13", 110, 0., 1.1, 2000, -0.1, 0.1);
-    hbeta_dphi14 = new TH2F(N3+"14_eta_dphi", "eta vs dphi14", 110, 0., 1.1, 2000, -0.1, 0.1);
-    hbeta_dphi23 = new TH2F(N3+"23_eta_dphi", "eta vs dphi23", 110, 0., 1.1, 2000, -0.1, 0.1);
-    hbeta_dphi24 = new TH2F(N3+"24_eta_dphi", "eta vs dphi24", 110, 0., 1.1, 2000, -0.1, 0.1);
-    hbeta_dphi34 = new TH2F(N3+"34_eta_dphi", "eta vs dphi34", 110, 0., 1.1, 2000, -0.1, 0.1);
+    hbeta_dphi12 = new TH2F(N3+"12_eta_dphi", "eta vs dphi12", 120, 0., 1.2, 2000, -0.1, 0.1);
+    hbeta_dphi13 = new TH2F(N3+"13_eta_dphi", "eta vs dphi13", 120, 0., 1.2, 2000, -0.1, 0.1);
+    hbeta_dphi14 = new TH2F(N3+"14_eta_dphi", "eta vs dphi14", 120, 0., 1.2, 2000, -0.1, 0.1);
+    hbeta_dphi23 = new TH2F(N3+"23_eta_dphi", "eta vs dphi23", 120, 0., 1.2, 2000, -0.1, 0.1);
+    hbeta_dphi24 = new TH2F(N3+"24_eta_dphi", "eta vs dphi24", 120, 0., 1.2, 2000, -0.1, 0.1);
+    hbeta_dphi34 = new TH2F(N3+"34_eta_dphi", "eta vs dphi34", 120, 0., 1.2, 2000, -0.1, 0.1);
 
-    hbeta_rdphi12 = new TH2F(N3+"12_eta_rdphi", "eta vs rdphi12", 110, 0., 1.1, 2000, -0.1, 0.1);
-    hbeta_rdphi13 = new TH2F(N3+"13_eta_rdphi", "eta vs rdphi13", 110, 0., 1.1, 2000, -0.1, 0.1);
-    hbeta_rdphi14 = new TH2F(N3+"14_eta_rdphi", "eta vs rdphi14", 110, 0., 1.1, 2000, -0.1, 0.1);
-    hbeta_rdphi23 = new TH2F(N3+"23_eta_rdphi", "eta vs rdphi23", 110, 0., 1.1, 2000, -0.1, 0.1);
-    hbeta_rdphi24 = new TH2F(N3+"24_eta_rdphi", "eta vs rdphi24", 110, 0., 1.1, 2000, -0.1, 0.1);
-    hbeta_rdphi34 = new TH2F(N3+"34_eta_rdphi", "eta vs rdphi34", 110, 0., 1.1, 2000, -0.1, 0.1);
+    hbeta_rdphi12 = new TH2F(N3+"12_eta_rdphi", "eta vs rdphi12", 120, 0., 1.2, 2000, -0.1, 0.1);
+    hbeta_rdphi13 = new TH2F(N3+"13_eta_rdphi", "eta vs rdphi13", 120, 0., 1.2, 2000, -0.1, 0.1);
+    hbeta_rdphi14 = new TH2F(N3+"14_eta_rdphi", "eta vs rdphi14", 120, 0., 1.2, 2000, -0.1, 0.1);
+    hbeta_rdphi23 = new TH2F(N3+"23_eta_rdphi", "eta vs rdphi23", 120, 0., 1.2, 2000, -0.1, 0.1);
+    hbeta_rdphi24 = new TH2F(N3+"24_eta_rdphi", "eta vs rdphi24", 120, 0., 1.2, 2000, -0.1, 0.1);
+    hbeta_rdphi34 = new TH2F(N3+"34_eta_rdphi", "eta vs rdphi34", 120, 0., 1.2, 2000, -0.1, 0.1);
 
-    hbeta_dphiPt12 = new TH2F(N3+"12_eta_dphiPt", "eta vs dphi*Pt12", 110, 0., 1.1, 200, -1.5, 1.5);
-    hbeta_dphiPt13 = new TH2F(N3+"13_eta_dphiPt", "eta vs dphi*Pt13", 110, 0., 1.1, 200, -1.5, 1.5);
-    hbeta_dphiPt14 = new TH2F(N3+"14_eta_dphiPt", "eta vs dphi*Pt14", 110, 0., 1.1, 200, -1.5, 1.5);
-    hbeta_dphiPt23 = new TH2F(N3+"23_eta_dphiPt", "eta vs dphi*Pt23", 110, 0., 1.1, 200, -1.5, 1.5);
-    hbeta_dphiPt24 = new TH2F(N3+"24_eta_dphiPt", "eta vs dphi*Pt24", 110, 0., 1.1, 200, -1.5, 1.5);
-    hbeta_dphiPt34 = new TH2F(N3+"34_eta_dphiPt", "eta vs dphi*Pt34", 110, 0., 1.1, 200, -1.5, 1.5);
+    hbeta_dphiPt12 = new TH2F(N3+"12_eta_dphiPt", "eta vs dphi*Pt12", 120, 0., 1.2, 200, -1.5, 1.5);
+    hbeta_dphiPt13 = new TH2F(N3+"13_eta_dphiPt", "eta vs dphi*Pt13", 120, 0., 1.2, 200, -1.5, 1.5);
+    hbeta_dphiPt14 = new TH2F(N3+"14_eta_dphiPt", "eta vs dphi*Pt14", 120, 0., 1.2, 200, -1.5, 1.5);
+    hbeta_dphiPt23 = new TH2F(N3+"23_eta_dphiPt", "eta vs dphi*Pt23", 120, 0., 1.2, 200, -1.5, 1.5);
+    hbeta_dphiPt24 = new TH2F(N3+"24_eta_dphiPt", "eta vs dphi*Pt24", 120, 0., 1.2, 200, -1.5, 1.5);
+    hbeta_dphiPt34 = new TH2F(N3+"34_eta_dphiPt", "eta vs dphi*Pt34", 120, 0., 1.2, 200, -1.5, 1.5);
 
-    hbeta_rdphiPt12 = new TH2F(N3+"12_eta_rdphiPt", "eta vs rdphi*Pt12", 110, 0., 1.1, 200, -1.5, 1.5);
-    hbeta_rdphiPt13 = new TH2F(N3+"13_eta_rdphiPt", "eta vs rdphi*Pt13", 110, 0., 1.1, 200, -1.5, 1.5);
-    hbeta_rdphiPt14 = new TH2F(N3+"14_eta_rdphiPt", "eta vs rdphi*Pt14", 110, 0., 1.1, 200, -1.5, 1.5);
-    hbeta_rdphiPt23 = new TH2F(N3+"23_eta_rdphiPt", "eta vs rdphi*Pt23", 110, 0., 1.1, 200, -1.5, 1.5);
-    hbeta_rdphiPt24 = new TH2F(N3+"24_eta_rdphiPt", "eta vs rdphi*Pt24", 110, 0., 1.1, 200, -1.5, 1.5);
-    hbeta_rdphiPt34 = new TH2F(N3+"34_eta_rdphiPt", "eta vs rdphi*Pt34", 110, 0., 1.1, 200, -1.5, 1.5);
+    hbeta_rdphiPt12 = new TH2F(N3+"12_eta_rdphiPt", "eta vs rdphi*Pt12", 120, 0., 1.2, 200, -1.5, 1.5);
+    hbeta_rdphiPt13 = new TH2F(N3+"13_eta_rdphiPt", "eta vs rdphi*Pt13", 120, 0., 1.2, 200, -1.5, 1.5);
+    hbeta_rdphiPt14 = new TH2F(N3+"14_eta_rdphiPt", "eta vs rdphi*Pt14", 120, 0., 1.2, 200, -1.5, 1.5);
+    hbeta_rdphiPt23 = new TH2F(N3+"23_eta_rdphiPt", "eta vs rdphi*Pt23", 120, 0., 1.2, 200, -1.5, 1.5);
+    hbeta_rdphiPt24 = new TH2F(N3+"24_eta_rdphiPt", "eta vs rdphi*Pt24", 120, 0., 1.2, 200, -1.5, 1.5);
+    hbeta_rdphiPt34 = new TH2F(N3+"34_eta_rdphiPt", "eta vs rdphi*Pt34", 120, 0., 1.2, 200, -1.5, 1.5);
 
   }
 
@@ -804,16 +804,16 @@ public:
     TString N4 = name_.c_str();
     name=N4;
 
-    eta_dphiA  = new TH2F(N4+"_eta_dphiA", "eta vs dphit @ME", 150, 1., 2.5, 200, -0.03, 0.03);
-    eta_rdphiA = new TH2F(N4+"_eta_rdphiA", "eta vs rdphi @ME", 150, 1., 2.5, 200, -0.03, 0.03);
-    eta_detaA  = new TH2F(N4+"_eta_detaA", "eta vs deta  @ME", 150, 1., 2.5, 101, -0.01, 0.01);
-    eta_rdetaA  = new TH2F(N4+"_eta_rdetaA", "eta vs rdeta  @ME", 150, 1., 2.5, 101, -0.01, 0.01);
+    eta_dphiA  = new TH2F(N4+"_eta_dphiA", "eta vs dphit @ME", 180, 0.9, 2.7, 200, -0.03, 0.03);
+    eta_rdphiA = new TH2F(N4+"_eta_rdphiA", "eta vs rdphi @ME", 180, 0.9, 2.7, 200, -0.03, 0.03);
+    eta_detaA  = new TH2F(N4+"_eta_detaA", "eta vs deta  @ME", 180, 0.9, 2.7, 101, -0.01, 0.01);
+    eta_rdetaA  = new TH2F(N4+"_eta_rdetaA", "eta vs rdeta  @ME", 180, 0.9, 2.7, 101, -0.01, 0.01);
 
-    eta_dphiPtA = new TH2F(N4+"_eta_dphiPtA", "eta vs dphi*Pt @ME", 150, 1., 2.5, 200, -1.0, 1.0);
-    eta_rdphiPtA = new TH2F(N4+"_eta_rdphiPtA", "eta vs rdphi*Pt @ME", 150, 1., 2.5, 200, -1.0, 1.0);
+    eta_dphiPtA = new TH2F(N4+"_eta_dphiPtA", "eta vs dphi*Pt @ME", 180, 0.9, 2.7, 200, -1.0, 1.0);
+    eta_rdphiPtA = new TH2F(N4+"_eta_rdphiPtA", "eta vs rdphi*Pt @ME", 180, 0.9, 2.7, 200, -1.0, 1.0);
 
-    eta_Pt    = new TH2F(N4+"_eta_Pt", "eta vs Pt @ME", 150, 1., 2.5, 50, 5.0, 205.0);
-    eta_dphir = new TH2F(N4+"_eta_dphir", "eta vs dphi resolution @ME", 150, 1., 2.5, 101, -0.0005, 0.0005);
+    eta_Pt    = new TH2F(N4+"_eta_Pt", "eta vs Pt @ME", 180, 0.9, 2.7, 50, 5.0, 205.0);
+    eta_dphir = new TH2F(N4+"_eta_dphir", "eta vs dphi resolution @ME", 180, 0.9, 2.7, 101, -0.0005, 0.0005);
     hpt_dphiA  = new TH2F(N4+"_hpt_dphiA", "pt vs dphi @ME", 50, 5., 205, 200, 0.0, 0.1);
     hpt_rdphiA = new TH2F(N4+"_hpt_rdphiA", "pt vs rdphi @ME", 50, 5., 205, 200, 0.0, 0.1);
   }
@@ -907,16 +907,16 @@ public:
     TString N5 = name_.c_str();
     name=N5;
 
-    eta_dphiA  = new TH2F(N5+"_eta_dphiA", "eta vs dphi @MB", 110, 0., 1.1, 200, -0.03, 0.03);
-    eta_rdphiA = new TH2F(N5+"_eta_rdphiA", "eta vs rdphi @MB", 110, 0., 1.1, 200, -0.03, 0.03);
-    eta_detaA  = new TH2F(N5+"_eta_detaA", "eta vs deta  @MB", 110, 0., 1.1, 101, -0.01, 0.01);
-    eta_rdetaA  = new TH2F(N5+"_eta_rdetaA", "eta vs rdeta  @MB", 110, 0., 1.1, 101, -0.01, 0.01);
+    eta_dphiA  = new TH2F(N5+"_eta_dphiA", "eta vs dphi @MB", 120, 0., 1.2, 200, -0.03, 0.03);
+    eta_rdphiA = new TH2F(N5+"_eta_rdphiA", "eta vs rdphi @MB", 120, 0., 1.2, 200, -0.03, 0.03);
+    eta_detaA  = new TH2F(N5+"_eta_detaA", "eta vs deta  @MB", 120, 0., 1.2, 101, -0.01, 0.01);
+    eta_rdetaA  = new TH2F(N5+"_eta_rdetaA", "eta vs rdeta  @MB", 120, 0., 1.2, 101, -0.01, 0.01);
 
-    eta_dphiPtA  = new TH2F(N5+"_eta_dphiPtA", "eta vs dphi*Pt @MB", 110, 0., 1.1, 200, -1.0, 1.0);
-    eta_rdphiPtA = new TH2F(N5+"_eta_rdphiPtA", "eta vs rdphi*Pt @MB", 110, 0., 1.1, 200, -1.0, 1.0);
+    eta_dphiPtA  = new TH2F(N5+"_eta_dphiPtA", "eta vs dphi*Pt @MB", 120, 0., 1.2, 200, -1.0, 1.0);
+    eta_rdphiPtA = new TH2F(N5+"_eta_rdphiPtA", "eta vs rdphi*Pt @MB", 120, 0., 1.2, 200, -1.0, 1.0);
 
-    eta_Pt    = new TH2F(N5+"_eta_Pt", "eta vs Pt @MB", 110, 0., 1.1, 50, 5.0, 205.0);
-    eta_dphir = new TH2F(N5+"_eta_dphir", "eta vs dphi resolution @MB", 110, 0., 1.1, 101, -0.0005, 0.0005);
+    eta_Pt    = new TH2F(N5+"_eta_Pt", "eta vs Pt @MB", 120, 0., 1.2, 50, 5.0, 205.0);
+    eta_dphir = new TH2F(N5+"_eta_dphir", "eta vs dphi resolution @MB", 120, 0., 1.2, 101, -0.0005, 0.0005);
     hpt_dphiA  = new TH2F(N5+"_hpt_dphiA", "pt vs dphi @MB", 50, 5., 205.0, 200, 0.0, 0.1);
     hpt_rdphiA = new TH2F(N5+"_hpt_rdphiA", "pt vs rdphi @MB", 50, 5., 205.0, 200, 0.0, 0.1);
   }
@@ -1011,16 +1011,16 @@ public:
     TString N6 = name_.c_str();
     name=N6;
 
-    eta_dphi  = new TH2F(N6+"_eta_dphi", "eta vs dphit @ME", 150, 1., 2.5, 800, -0.2, 0.2);
-    eta_rdphi = new TH2F(N6+"_eta_rdphi", "eta vs rdphi @ME", 150, 1., 2.5, 800, -0.2, 0.2);
+    eta_dphi  = new TH2F(N6+"_eta_dphi", "eta vs dphit @ME", 180, 0.9, 2.7, 800, -0.2, 0.2);
+    eta_rdphi = new TH2F(N6+"_eta_rdphi", "eta vs rdphi @ME", 180, 0.9, 2.7, 800, -0.2, 0.2);
 
-    eta_phir  = new TH2F(N6+"_eta_phir", "eta vs phi resolution  @ME", 150, 1., 2.5, 101, -0.01, 0.01);
-    eta_etar  = new TH2F(N6+"_eta_etar", "eta vs eta resolution  @ME", 150, 1., 2.5, 101, -0.01, 0.01);
+    eta_phir  = new TH2F(N6+"_eta_phir", "eta vs phi resolution  @ME", 180, 0.9, 2.7, 101, -0.01, 0.01);
+    eta_etar  = new TH2F(N6+"_eta_etar", "eta vs eta resolution  @ME", 180, 0.9, 2.7, 101, -0.01, 0.01);
 
-    eta_dphiPt = new TH2F(N6+"_eta_dphiPt", "eta vs dphi*Pt 1", 150, 1., 2.5, 400, -3., 3.);
-    eta_rdphiPt = new TH2F(N6+"_eta_rdphiPt", "eta vs rdphi*Pt 1", 150, 1., 2.5, 400, -3., 3.);
+    eta_dphiPt = new TH2F(N6+"_eta_dphiPt", "eta vs dphi*Pt 1", 180, 0.9, 2.7, 400, -3., 3.);
+    eta_rdphiPt = new TH2F(N6+"_eta_rdphiPt", "eta vs rdphi*Pt 1", 180, 0.9, 2.7, 400, -3., 3.);
 
-    eta_Pt1   = new TH2F(N6+"_eta_Pt1", "eta vs Pt @ME", 150, 1., 2.5, 50, 5.0, 205.0);
+    eta_Pt1   = new TH2F(N6+"_eta_Pt1", "eta vs Pt @ME", 180, 0.9, 2.7, 50, 5.0, 205.0);
     hpt_dphi = new TH2F(N6+"_hpt_dphi", "pt vs dphi @ME", 50, 5., 205, 200, 0.0, 0.1);
     hpt_rdphi = new TH2F(N6+"_hpt_rdphi", "pt vs rdphi @ME", 50, 5., 205, 200, 0.0, 0.1);
   }
@@ -1115,16 +1115,16 @@ public:
     TString N7 = name_.c_str();
     name=N7;
 
-    eta_dphi  = new TH2F(N7+"_eta_dphi", "eta vs dphit @MB", 110, 0., 1.1, 800, -0.2, 0.2);
-    eta_rdphi = new TH2F(N7+"_eta_rdphi", "eta vs rdphi @MB", 110, 0., 1.1, 800, -0.2, 0.2);
+    eta_dphi  = new TH2F(N7+"_eta_dphi", "eta vs dphit @MB", 120, 0., 1.2, 800, -0.2, 0.2);
+    eta_rdphi = new TH2F(N7+"_eta_rdphi", "eta vs rdphi @MB", 120, 0., 1.2, 800, -0.2, 0.2);
 
-    eta_phir  = new TH2F(N7+"_eta_phir", "eta vs phi resolution  @MB", 110, 0., 1.1, 101, -0.01, 0.01);
-    eta_etar  = new TH2F(N7+"_eta_etar", "eta vs eta resolution  @MB", 110, 0., 1.1, 101, -0.01, 0.01);
+    eta_phir  = new TH2F(N7+"_eta_phir", "eta vs phi resolution  @MB", 120, 0., 1.2, 101, -0.01, 0.01);
+    eta_etar  = new TH2F(N7+"_eta_etar", "eta vs eta resolution  @MB", 120, 0., 1.2, 101, -0.01, 0.01);
 
-    eta_dphiPt  = new TH2F(N7+"_eta_dphiPt", "eta vs dphi*Pt @MB", 110, 0., 1.1, 400, -3., 3.);
-    eta_rdphiPt = new TH2F(N7+"_eta_rdphiPt", "eta vs rdphi*Pt @MB", 110, 0., 1.1, 400, -3., 3.);
+    eta_dphiPt  = new TH2F(N7+"_eta_dphiPt", "eta vs dphi*Pt @MB", 120, 0., 1.2, 400, -3., 3.);
+    eta_rdphiPt = new TH2F(N7+"_eta_rdphiPt", "eta vs rdphi*Pt @MB", 120, 0., 1.2, 400, -3., 3.);
 
-    eta_Pt1   = new TH2F(N7+"_eta_Pt1", "eta vs Pt @MB", 150, 1., 2.5, 50, 5.0, 205.0);
+    eta_Pt1   = new TH2F(N7+"_eta_Pt1", "eta vs Pt @MB", 180, 0.9, 2.7, 50, 5.0, 205.0);
     hpt_dphi = new TH2F(N7+"_hpt_dphi", "pt vs dphi @MB", 50, 5., 205, 200, 0.0, 0.1);
     hpt_rdphi = new TH2F(N7+"_hpt_rdphi", "pt vs rdphi @MB", 50, 5., 205, 200, 0.0, 0.1);
   }
@@ -1219,16 +1219,16 @@ public:
     TString N10 = name_.c_str();
     name=N10;
 
-    eta_dphiA  = new TH2F(N10+"_eta_dphiA", "eta vs dphi @OL", 50, 0.8,1.3, 200, -0.08, 0.08);
-    eta_rdphiA = new TH2F(N10+"_eta_rdphiA", "eta vs rdphi @OL", 50, 0.8,1.3, 200, -0.08, 0.08);
-    eta_detaA  = new TH2F(N10+"_eta_detaA", "eta vs deta  @OL", 50, 0.8,1.3, 101, -0.01, 0.01);
-    eta_rdetaA  = new TH2F(N10+"_eta_rdetaA", "eta vs rdeta  @OL", 50, 0.8,1.3, 101, -0.01, 0.01);
+    eta_dphiA  = new TH2F(N10+"_eta_dphiA", "eta vs dphi @OL", 60, 0.7,1.3, 200, -0.08, 0.08);
+    eta_rdphiA = new TH2F(N10+"_eta_rdphiA", "eta vs rdphi @OL", 60, 0.7,1.3, 200, -0.08, 0.08);
+    eta_detaA  = new TH2F(N10+"_eta_detaA", "eta vs deta  @OL", 60, 0.7,1.3, 101, -0.01, 0.01);
+    eta_rdetaA  = new TH2F(N10+"_eta_rdetaA", "eta vs rdeta  @OL", 60, 0.7,1.3, 101, -0.01, 0.01);
 
-    eta_dphiPtA  = new TH2F(N10+"_eta_dphiPtA", "eta vs dphi*Pt @OL", 50, 0.8,1.3, 200, -1.0, 1.0);
-    eta_rdphiPtA = new TH2F(N10+"_eta_rdphiPtA", "eta vs rdphi*Pt @OL", 50, 0.8,1.3, 200, -1.0, 1.0);
+    eta_dphiPtA  = new TH2F(N10+"_eta_dphiPtA", "eta vs dphi*Pt @OL", 60, 0.7,1.3, 200, -1.0, 1.0);
+    eta_rdphiPtA = new TH2F(N10+"_eta_rdphiPtA", "eta vs rdphi*Pt @OL", 60, 0.7,1.3, 200, -1.0, 1.0);
 
-    eta_Pt    = new TH2F(N10+"_eta_Pt", "eta vs Pt @OL", 50, 0.8,1.3, 50, 5.0, 205.0);
-    eta_dphir = new TH2F(N10+"_eta_dphir", "eta vs dphi resolution @OL", 50, 0.8,1.3, 101, -0.0005, 0.0005);
+    eta_Pt    = new TH2F(N10+"_eta_Pt", "eta vs Pt @OL", 60, 0.7,1.3, 50, 5.0, 205.0);
+    eta_dphir = new TH2F(N10+"_eta_dphir", "eta vs dphi resolution @OL", 60, 0.7,1.3, 101, -0.0005, 0.0005);
     hpt_dphiA  = new TH2F(N10+"_hpt_dphiA", "pt vs dphi @OL", 50, 5., 205.0, 200, 0.0, 0.1);
     hpt_rdphiA = new TH2F(N10+"_hpt_rdphiA", "pt vs rdphi @OL", 50, 5., 205.0, 200, 0.0, 0.1);
   }

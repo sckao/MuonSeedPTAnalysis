@@ -41,45 +41,48 @@ MuonSeedParaFillHisto::~MuonSeedParaFillHisto(){
 void MuonSeedParaFillHisto::FillCSCSegmentPair(H2DRecHit2* histo2, double pt1[5], double chi2_dof1[5],
                                            double dPhiP1[2][5][5], double EtaP1[2][5]  ) {
 
+  double ptIn = ( pt1[1] != 0. ) ? pt1[1] : pt1[2] ;      
+  if ( ptIn == 0 ) ptIn = pt1[0];
+
   // fill the information for CSC pT parameterization from segment pair
-  if (dPhiP1[1][0][1]!=99.0 && chi2_dof1[0] < 2000.0 && chi2_dof1[1] < 2000.0){
-     histo2->Fill5_0( dPhiP1[0][0][1],dPhiP1[1][0][1],pt1[1]*dPhiP1[0][0][1],pt1[1]*dPhiP1[1][0][1],
+  if (dPhiP1[1][0][1]!=99.0 && chi2_dof1[0] < 2000.0 && chi2_dof1[1] < 2000.0 ){
+     histo2->Fill5_0( dPhiP1[0][0][1],dPhiP1[1][0][1],ptIn*dPhiP1[0][0][1],ptIn*dPhiP1[1][0][1],
 		     fabs(EtaP1[0][0]),fabs(EtaP1[1][0]) );
   }
   if (dPhiP1[1][0][2]!=99.0 && chi2_dof1[0] < 2000.0 && chi2_dof1[2] < 2000.0){
-     histo2->Fill5_1( dPhiP1[0][0][2],dPhiP1[1][0][2],pt1[1]*dPhiP1[0][0][2],pt1[1]*dPhiP1[1][0][2],
+     histo2->Fill5_1( dPhiP1[0][0][2],dPhiP1[1][0][2],ptIn*dPhiP1[0][0][2],ptIn*dPhiP1[1][0][2],
 		     fabs(EtaP1[0][0]),fabs(EtaP1[1][0]) );
   }
   if (dPhiP1[1][0][3]!=99.0 && chi2_dof1[0] < 2000.0 && chi2_dof1[3] < 2000.0){
-     histo2->Fill5_2( dPhiP1[0][0][3],dPhiP1[1][0][3],pt1[1]*dPhiP1[0][0][3],pt1[1]*dPhiP1[1][0][3],
+     histo2->Fill5_2( dPhiP1[0][0][3],dPhiP1[1][0][3],ptIn*dPhiP1[0][0][3],ptIn*dPhiP1[1][0][3],
 		     fabs(EtaP1[0][0]),fabs(EtaP1[1][0]) );
   }
   if (dPhiP1[1][0][4]!=99.0 && chi2_dof1[0] < 2000.0 && chi2_dof1[4] < 2000.0){
-     histo2->Fill5_3( dPhiP1[0][0][4],dPhiP1[1][0][4],pt1[1]*dPhiP1[0][0][4],pt1[1]*dPhiP1[1][0][4],
+     histo2->Fill5_3( dPhiP1[0][0][4],dPhiP1[1][0][4],ptIn*dPhiP1[0][0][4],ptIn*dPhiP1[1][0][4],
 		     fabs(EtaP1[0][0]),fabs(EtaP1[1][0]) );
   }
   if (dPhiP1[1][1][2]!=99.0 && chi2_dof1[1] < 2000.0 && chi2_dof1[2] < 2000.0){
-     histo2->Fill5_1( dPhiP1[0][1][2],dPhiP1[1][1][2],pt1[1]*dPhiP1[0][1][2],pt1[1]*dPhiP1[1][1][2],
+     histo2->Fill5_1( dPhiP1[0][1][2],dPhiP1[1][1][2],ptIn*dPhiP1[0][1][2],ptIn*dPhiP1[1][1][2],
 		     fabs(EtaP1[0][1]),fabs(EtaP1[1][1]) );
   }
   if (dPhiP1[1][1][3]!=99.0 && chi2_dof1[1] < 2000.0 && chi2_dof1[3] < 2000.0){
-     histo2->Fill5_2( dPhiP1[0][1][3],dPhiP1[1][1][3],pt1[1]*dPhiP1[0][1][3],pt1[1]*dPhiP1[1][1][3],
+     histo2->Fill5_2( dPhiP1[0][1][3],dPhiP1[1][1][3],ptIn*dPhiP1[0][1][3],ptIn*dPhiP1[1][1][3],
 		     fabs(EtaP1[0][1]),fabs(EtaP1[1][1]) );
   }
   if (dPhiP1[1][1][4]!=99.0 && chi2_dof1[1] < 2000.0 && chi2_dof1[4] < 2000.0){
-     histo2->Fill5_3( dPhiP1[0][1][4],dPhiP1[1][1][4],pt1[1]*dPhiP1[0][1][4],pt1[1]*dPhiP1[1][1][4],
+     histo2->Fill5_3( dPhiP1[0][1][4],dPhiP1[1][1][4],ptIn*dPhiP1[0][1][4],ptIn*dPhiP1[1][1][4],
 		     fabs(EtaP1[0][1]),fabs(EtaP1[1][1]) );
   }
   if (dPhiP1[1][2][3]!=99.0 && chi2_dof1[2] < 2000.0 && chi2_dof1[3] < 2000.0){
-     histo2->Fill5_4( dPhiP1[0][2][3],dPhiP1[1][2][3],pt1[1]*dPhiP1[0][2][3],pt1[1]*dPhiP1[1][2][3],
+     histo2->Fill5_4( dPhiP1[0][2][3],dPhiP1[1][2][3],ptIn*dPhiP1[0][2][3],ptIn*dPhiP1[1][2][3],
 		     fabs(EtaP1[0][2]),fabs(EtaP1[1][2]) );
   }
   if (dPhiP1[1][2][4]!=99.0 && chi2_dof1[2] < 2000.0 && chi2_dof1[4] < 2000.0){
-     histo2->Fill5_5( dPhiP1[0][2][4],dPhiP1[1][2][4],pt1[1]*dPhiP1[0][2][4],pt1[1]*dPhiP1[1][2][4],
+     histo2->Fill5_5( dPhiP1[0][2][4],dPhiP1[1][2][4],ptIn*dPhiP1[0][2][4],ptIn*dPhiP1[1][2][4],
 		     fabs(EtaP1[0][2]),fabs(EtaP1[1][2]) );
   }
   if (dPhiP1[1][3][4]!=99.0 && chi2_dof1[3] < 2000.0 && chi2_dof1[4] < 2000.0){
-     histo2->Fill5_6( dPhiP1[0][3][4],dPhiP1[1][3][4],pt1[1]*dPhiP1[0][3][4],pt1[1]*dPhiP1[1][3][4],
+     histo2->Fill5_6( dPhiP1[0][3][4],dPhiP1[1][3][4],ptIn*dPhiP1[0][3][4],ptIn*dPhiP1[1][3][4],
 		     fabs(EtaP1[0][3]),fabs(EtaP1[1][3]) );
   }
 
@@ -88,30 +91,33 @@ void MuonSeedParaFillHisto::FillCSCSegmentPair(H2DRecHit2* histo2, double pt1[5]
 void MuonSeedParaFillHisto::FillDTSegmentPair(H2DRecHit3* histo3, double pt1[5], double chi2_dof3[5],
                                              double dPhiP3[2][5][5], double EtaP3[2][5]  ) {
 
+  double ptIn = ( pt1[1] != 0. ) ? pt1[1] : pt1[2] ;      
+  if ( ptIn == 0 ) ptIn = pt1[0];
+
   /// For DT
   //  fill the information for DT pT parameterization from segment pair
-  if (dPhiP3[1][1][2]!=99.0 && chi2_dof3[1] < 2000.0 && chi2_dof3[2] < 2000.0){
-     histo3->Fill6_1( dPhiP3[0][1][2],dPhiP3[1][1][2],pt1[1]*dPhiP3[0][1][2],pt1[1]*dPhiP3[1][1][2],
+  if (dPhiP3[1][1][2]!=99.0 && chi2_dof3[1] < 2000.0 && chi2_dof3[2] < 2000.0 ){
+     histo3->Fill6_1( dPhiP3[0][1][2],dPhiP3[1][1][2],ptIn*dPhiP3[0][1][2],ptIn*dPhiP3[1][1][2],
 		     fabs(EtaP3[0][1]),fabs(EtaP3[1][1]) );
   }
   if (dPhiP3[1][1][3]!=99.0 && chi2_dof3[1] < 2000.0 && chi2_dof3[3] < 2000.0){
-     histo3->Fill6_2( dPhiP3[0][1][3],dPhiP3[1][1][3],pt1[1]*dPhiP3[0][1][3],pt1[1]*dPhiP3[1][1][3],
+     histo3->Fill6_2( dPhiP3[0][1][3],dPhiP3[1][1][3],ptIn*dPhiP3[0][1][3],ptIn*dPhiP3[1][1][3],
 		     fabs(EtaP3[0][1]),fabs(EtaP3[1][1]) );
   }
   if (dPhiP3[1][1][4]!=99.0 && chi2_dof3[1] < 2000.0 && chi2_dof3[4] < 2000.0){
-     histo3->Fill6_3( dPhiP3[0][1][4],dPhiP3[1][1][4],pt1[1]*dPhiP3[0][1][4],pt1[1]*dPhiP3[1][1][4],
+     histo3->Fill6_3( dPhiP3[0][1][4],dPhiP3[1][1][4],ptIn*dPhiP3[0][1][4],ptIn*dPhiP3[1][1][4],
 		     fabs(EtaP3[0][1]),fabs(EtaP3[1][1]) );
   }
   if (dPhiP3[1][2][3]!=99.0 && chi2_dof3[2] < 2000.0 && chi2_dof3[3] < 2000.0){
-     histo3->Fill6_4( dPhiP3[0][2][3],dPhiP3[1][2][3],pt1[1]*dPhiP3[0][2][3],pt1[1]*dPhiP3[1][2][3],
+     histo3->Fill6_4( dPhiP3[0][2][3],dPhiP3[1][2][3],ptIn*dPhiP3[0][2][3],ptIn*dPhiP3[1][2][3],
 		     fabs(EtaP3[0][2]),fabs(EtaP3[1][2]) );
   }
   if (dPhiP3[1][2][4]!=99.0 && chi2_dof3[2] < 2000.0 && chi2_dof3[4] < 2000.0){
-     histo3->Fill6_5( dPhiP3[0][2][4],dPhiP3[1][2][4],pt1[1]*dPhiP3[0][2][4],pt1[1]*dPhiP3[1][2][4],
+     histo3->Fill6_5( dPhiP3[0][2][4],dPhiP3[1][2][4],ptIn*dPhiP3[0][2][4],ptIn*dPhiP3[1][2][4],
 		     fabs(EtaP3[0][2]),fabs(EtaP3[1][2]) );
   }
   if (dPhiP3[1][3][4]!=99.0 && chi2_dof3[3] < 2000.0 && chi2_dof3[4] < 2000.0){
-     histo3->Fill6_6( dPhiP3[0][3][4],dPhiP3[1][3][4],pt1[1]*dPhiP3[0][3][4],pt1[1]*dPhiP3[1][3][4],
+     histo3->Fill6_6( dPhiP3[0][3][4],dPhiP3[1][3][4],ptIn*dPhiP3[0][3][4],ptIn*dPhiP3[1][3][4],
 		     fabs(EtaP3[0][3]),fabs(EtaP3[1][3]) );
   }
 
@@ -125,16 +131,20 @@ void MuonSeedParaFillHisto::FillCSCSegmentPairByChamber(H2DRecHit4* hME1[15], do
   ///                 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14   
   int csc1[2][15]= {{ 1, 1,12,12,13, 1, 1,12,13, 1,21,21,22,21,31},
                     {12,21,21,22,22,31,32,32,32,41,31,32,32,41,41}}; 
+
+  double ptIn = ( pt1[1] != 0. ) ? pt1[1] : pt1[2] ;      
+  if ( ptIn == 0 ) ptIn = pt1[0];
+
   for (int l=0; l<15; l++) {
       int s1 = csc1[0][l]/10; // 0 0 1 1 1 0 0 1 1 0 2 2 2 2 3
       int r1 = csc1[0][l]%10; // 1 1 2 2 3 1 1 2 3 1 1 1 2 1 1
       int s2 = csc1[1][l]/10; 
       int r2 = csc1[1][l]%10;
-      if ( MEPath[1][s1][r1] && MEPath[1][s2][r2] && MEPath[0][s1][r1] && MEPath[0][s2][r2] ) {
+      if ( MEPath[1][s1][r1] && MEPath[1][s2][r2] && MEPath[0][s1][r1] && MEPath[0][s2][r2] && ptIn > 0. ) {
          double ME_Resol = dPhiP1[0][s1][s2]-dPhiP1[1][s1][s2];
          histo4 = hME1[l];
-         histo4->Fill8(  (pt1[1]*dPhiP1[0][s1][s2]) ,dPhiP1[0][s1][s2] ,dEtaP1[0][s1][s2], fabs(EtaP1[0][s2]), pt1[1] );
-         histo4->Fill8a( (pt1[1]*dPhiP1[1][s1][s2]) ,dPhiP1[1][s1][s2] ,dEtaP1[1][s1][s2], fabs(EtaP1[1][s2]), pt1[1], ME_Resol );
+         histo4->Fill8(  (ptIn*dPhiP1[0][s1][s2]) ,dPhiP1[0][s1][s2] ,dEtaP1[0][s1][s2], fabs(EtaP1[0][s2]), ptIn );
+         histo4->Fill8a( (ptIn*dPhiP1[1][s1][s2]) ,dPhiP1[1][s1][s2] ,dEtaP1[1][s1][s2], fabs(EtaP1[1][s2]), ptIn, ME_Resol );
       }
   }
 
@@ -154,18 +164,21 @@ void MuonSeedParaFillHisto::FillDTSegmentPairByChamber(H2DRecHit5* hMB1[26], dou
       int w1 = dt1[0][l]%10;
       int s2 = dt1[1][l]/10;
       int w2 = dt1[1][l]%10;
-       
-      if ( MBPath[1][s1][w1] && MBPath[1][s2][w2] && MBPath[0][s1][w1] && MBPath[0][s2][w2] ) {
+
+      double ptIn = ( pt1[1] != 0. ) ? pt1[1] : pt1[2] ;      
+      if ( ptIn == 0 ) ptIn = pt1[0];
+
+      if ( MBPath[1][s1][w1] && MBPath[1][s2][w2] && MBPath[0][s1][w1] && MBPath[0][s2][w2] && ptIn > 0.) {
          double MB_Resol = dPhiP3[0][s1][s2]-dPhiP3[1][s1][s2];
          if (s2!=4 ){
             histo5 = hMB1[l];
-            histo5->Fill9( (pt1[1]*dPhiP3[0][s1][s2]), dPhiP3[0][s1][s2], dEtaP3[0][s1][s2], fabs(EtaP3[0][s2]), pt1[1] );
-            histo5->Fill9a((pt1[1]*dPhiP3[1][s1][s2]), dPhiP3[1][s1][s2], dEtaP3[1][s1][s2], fabs(EtaP3[1][s2]), pt1[1], MB_Resol );
+            histo5->Fill9( (ptIn*dPhiP3[0][s1][s2]), dPhiP3[0][s1][s2], dEtaP3[0][s1][s2], fabs(EtaP3[0][s2]), ptIn );
+            histo5->Fill9a((ptIn*dPhiP3[1][s1][s2]), dPhiP3[1][s1][s2], dEtaP3[1][s1][s2], fabs(EtaP3[1][s2]), ptIn, MB_Resol );
          }
          if (s2==4 ){
             histo5 = hMB1[l];
-            histo5->Fill9( (pt1[1]*dPhiP3[0][s1][s2]), dPhiP3[0][s1][s2], dEtaP3[0][s1][s2], fabs(EtaP3[0][s1]), pt1[1] );
-            histo5->Fill9a((pt1[1]*dPhiP3[1][s1][s2]), dPhiP3[1][s1][s2], dEtaP3[1][s1][s2], fabs(EtaP3[1][s1]), pt1[1], MB_Resol );
+            histo5->Fill9( (ptIn*dPhiP3[0][s1][s2]), dPhiP3[0][s1][s2], dEtaP3[0][s1][s2], fabs(EtaP3[0][s1]), ptIn );
+            histo5->Fill9a((ptIn*dPhiP3[1][s1][s2]), dPhiP3[1][s1][s2], dEtaP3[1][s1][s2], fabs(EtaP3[1][s1]), ptIn, MB_Resol );
          }
       }
   }

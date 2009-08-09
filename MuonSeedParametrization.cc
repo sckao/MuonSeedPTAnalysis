@@ -44,7 +44,7 @@ MuonSeedParametrization::MuonSeedParametrization(const ParameterSet& pset){
 
   recsegSelector    = new SegSelector(pset); 
   HistoFill         = new MuonSeedParaFillHisto(); 
-  ScaledPhi         = new MuonSeeddPhiScale(pset); 
+  if ( scale ) ScaledPhi = new MuonSeeddPhiScale(pset); 
 
   // Create the root file
   theFile = new TFile(rootFileName.c_str(), "RECREATE");
@@ -125,7 +125,7 @@ MuonSeedParametrization::~MuonSeedParametrization(){
   if (debug) cout << "[SeedQualityAnalysis] Destructor called" << endl;
   delete recsegSelector;
   delete HistoFill;
-  delete ScaledPhi;
+  if (scale) delete ScaledPhi;
   // Write the histos to file
   theFile->cd();
   theFile->cd("AllMuonSys");
@@ -803,7 +803,7 @@ void MuonSeedParametrization::FromDTSeg( std::vector<DTRecSegment4D> dtSeg, ESHa
 	       dEtaV3[m][s1][s2] = EtaV3[m][s1]-EtaV3[m][s2];
 	       dPhiP3[m][s1][s2] = PhiP3[m][s1]-PhiP3[m][s2];  
 	       dEtaP3[m][s1][s2] = EtaP3[m][s1]-EtaP3[m][s2];
-               //cout <<" ---------------------- DT  ------------------------------------------------"<<endl;
+               //cout <<" ---------------------- DT "<<s1<<"_"<<s2<<"-------------------------------------"<<endl;
                //cout <<"dPhi from P = "<< PhiP3[m][s1] <<" - "<<PhiP3[m][s2]<<" = "<<dPhiP3[m][s1][s2]<<endl;
                //cout <<"dPhi from V = "<< PhiV3[m][s1] <<" - "<<PhiV3[m][s2]<<" = "<<dPhiV3[m][s1][s2]<<endl;
             }
