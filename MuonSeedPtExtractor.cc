@@ -375,7 +375,7 @@ std::vector<double> MuonSeedPtExtractor::getPt(const std::vector<double> & vPara
   double h  = fabs(eta);
   double estPt  = ( vPara[0] + vPara[1]*h + vPara[2]*h*h ) / dPhi;
   // changed by S.C.
-  double estSPt = ( vPara[3] + vPara[4]*h + vPara[5]*h*h ) ;
+  double estSPt = ( vPara[3] + vPara[4]*h + vPara[5]*h*h ) / dPhi;
 
   // scale the pt and spt , changed by S.C.
   int wheel = 0;
